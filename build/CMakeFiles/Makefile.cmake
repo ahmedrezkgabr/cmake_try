@@ -12,6 +12,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.27.0-rc5/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.27.0-rc5/CMakeRCCompiler.cmake"
   "CMakeFiles/3.27.0-rc5/CMakeSystem.cmake"
+  "C:/Users/ahmed/OneDrive/Desktop/testingCMake/config.h.in"
   "C:/Users/ahmed/OneDrive/Desktop/testingCMake/newlib/CMakeLists.txt"
   "C:/cmake-3.27.0-rc5-windows-x86_64/share/cmake-3.27/Modules/CMakeCInformation.cmake"
   "C:/cmake-3.27.0-rc5-windows-x86_64/share/cmake-3.27/Modules/CMakeCXXInformation.cmake"
@@ -45,6 +46,7 @@ set(CMAKE_MAKEFILE_OUTPUTS
 
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
+  "config.h"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   "newlib/CMakeFiles/CMakeDirectoryInformation.cmake"
   )

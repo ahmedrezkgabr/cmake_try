@@ -63,29 +63,46 @@ CMAKE_BINARY_DIR = C:\Users\ahmed\OneDrive\Desktop\testingCMake\build
 
 # The main recursive "all" target.
 all: CMakeFiles/testbinary.dir/all
+all: newlib/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
-preinstall:
+preinstall: newlib/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
 clean: CMakeFiles/testbinary.dir/clean
+clean: newlib/clean
 .PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory newlib
+
+# Recursive "all" directory target.
+newlib/all: newlib/CMakeFiles/newlib.dir/all
+.PHONY : newlib/all
+
+# Recursive "preinstall" directory target.
+newlib/preinstall:
+.PHONY : newlib/preinstall
+
+# Recursive "clean" directory target.
+newlib/clean: newlib/CMakeFiles/newlib.dir/clean
+.PHONY : newlib/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/testbinary.dir
 
 # All Build rule for target.
-CMakeFiles/testbinary.dir/all:
+CMakeFiles/testbinary.dir/all: newlib/CMakeFiles/newlib.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\testbinary.dir\build.make CMakeFiles/testbinary.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\testbinary.dir\build.make CMakeFiles/testbinary.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\ahmed\OneDrive\Desktop\testingCMake\build\CMakeFiles --progress-num=1,2,3 "Built target testbinary"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\ahmed\OneDrive\Desktop\testingCMake\build\CMakeFiles --progress-num=3,4,5 "Built target testbinary"
 .PHONY : CMakeFiles/testbinary.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/testbinary.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\ahmed\OneDrive\Desktop\testingCMake\build\CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\ahmed\OneDrive\Desktop\testingCMake\build\CMakeFiles 5
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/testbinary.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\ahmed\OneDrive\Desktop\testingCMake\build\CMakeFiles 0
 .PHONY : CMakeFiles/testbinary.dir/rule
@@ -98,6 +115,32 @@ testbinary: CMakeFiles/testbinary.dir/rule
 CMakeFiles/testbinary.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\testbinary.dir\build.make CMakeFiles/testbinary.dir/clean
 .PHONY : CMakeFiles/testbinary.dir/clean
+
+#=============================================================================
+# Target rules for target newlib/CMakeFiles/newlib.dir
+
+# All Build rule for target.
+newlib/CMakeFiles/newlib.dir/all:
+	$(MAKE) $(MAKESILENT) -f newlib\CMakeFiles\newlib.dir\build.make newlib/CMakeFiles/newlib.dir/depend
+	$(MAKE) $(MAKESILENT) -f newlib\CMakeFiles\newlib.dir\build.make newlib/CMakeFiles/newlib.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\ahmed\OneDrive\Desktop\testingCMake\build\CMakeFiles --progress-num=1,2 "Built target newlib"
+.PHONY : newlib/CMakeFiles/newlib.dir/all
+
+# Build rule for subdir invocation for target.
+newlib/CMakeFiles/newlib.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\ahmed\OneDrive\Desktop\testingCMake\build\CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 newlib/CMakeFiles/newlib.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\ahmed\OneDrive\Desktop\testingCMake\build\CMakeFiles 0
+.PHONY : newlib/CMakeFiles/newlib.dir/rule
+
+# Convenience name for target.
+newlib: newlib/CMakeFiles/newlib.dir/rule
+.PHONY : newlib
+
+# clean rule for target.
+newlib/CMakeFiles/newlib.dir/clean:
+	$(MAKE) $(MAKESILENT) -f newlib\CMakeFiles\newlib.dir\build.make newlib/CMakeFiles/newlib.dir/clean
+.PHONY : newlib/CMakeFiles/newlib.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

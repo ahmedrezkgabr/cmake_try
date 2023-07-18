@@ -1,3 +1,6 @@
 C:/Users/ahmed/OneDrive/Desktop/testingCMake/build/CMakeFiles/testbinary.dir
 C:/Users/ahmed/OneDrive/Desktop/testingCMake/build/CMakeFiles/edit_cache.dir
 C:/Users/ahmed/OneDrive/Desktop/testingCMake/build/CMakeFiles/rebuild_cache.dir
+C:/Users/ahmed/OneDrive/Desktop/testingCMake/build/newlib/CMakeFiles/newlib.dir
+C:/Users/ahmed/OneDrive/Desktop/testingCMake/build/newlib/CMakeFiles/edit_cache.dir
+C:/Users/ahmed/OneDrive/Desktop/testingCMake/build/newlib/CMakeFiles/rebuild_cache.dir

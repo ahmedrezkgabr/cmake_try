@@ -86,14 +86,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\ahmed\OneDrive\Desktop\testingCMake\build\CMakeFiles C:\Users\ahmed\OneDrive\Desktop\testingCMake\build\\CMakeFiles\progress.marks
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
+	cd /d C:\Users\ahmed\OneDrive\Desktop\testingCMake\build && $(CMAKE_COMMAND) -E cmake_progress_start C:\Users\ahmed\OneDrive\Desktop\testingCMake\build\CMakeFiles C:\Users\ahmed\OneDrive\Desktop\testingCMake\build\newlib\\CMakeFiles\progress.marks
+	cd /d C:\Users\ahmed\OneDrive\Desktop\testingCMake\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 newlib/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\ahmed\OneDrive\Desktop\testingCMake\build\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 clean
+	cd /d C:\Users\ahmed\OneDrive\Desktop\testingCMake\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 newlib/clean
 .PHONY : clean
 
 # The main clean target
@@ -102,92 +102,56 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 preinstall
+	cd /d C:\Users\ahmed\OneDrive\Desktop\testingCMake\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 newlib/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 preinstall
+	cd /d C:\Users\ahmed\OneDrive\Desktop\testingCMake\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 newlib/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
+	cd /d C:\Users\ahmed\OneDrive\Desktop\testingCMake\build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named testbinary
+# Convenience name for target.
+newlib/CMakeFiles/newlib.dir/rule:
+	cd /d C:\Users\ahmed\OneDrive\Desktop\testingCMake\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 newlib/CMakeFiles/newlib.dir/rule
+.PHONY : newlib/CMakeFiles/newlib.dir/rule
 
-# Build rule for target.
-testbinary: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 testbinary
-.PHONY : testbinary
-
-# fast build rule for target.
-testbinary/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testbinary.dir\build.make CMakeFiles/testbinary.dir/build
-.PHONY : testbinary/fast
-
-#=============================================================================
-# Target rules for targets named newlib
-
-# Build rule for target.
-newlib: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 newlib
+# Convenience name for target.
+newlib: newlib/CMakeFiles/newlib.dir/rule
 .PHONY : newlib
 
 # fast build rule for target.
 newlib/fast:
-	$(MAKE) $(MAKESILENT) -f newlib\CMakeFiles\newlib.dir\build.make newlib/CMakeFiles/newlib.dir/build
+	cd /d C:\Users\ahmed\OneDrive\Desktop\testingCMake\build && $(MAKE) $(MAKESILENT) -f newlib\CMakeFiles\newlib.dir\build.make newlib/CMakeFiles/newlib.dir/build
 .PHONY : newlib/fast
 
-src/source.obj: src/source.c.obj
-.PHONY : src/source.obj
+lib.obj: lib.c.obj
+.PHONY : lib.obj
 
 # target to build an object file
-src/source.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testbinary.dir\build.make CMakeFiles/testbinary.dir/src/source.c.obj
-.PHONY : src/source.c.obj
+lib.c.obj:
+	cd /d C:\Users\ahmed\OneDrive\Desktop\testingCMake\build && $(MAKE) $(MAKESILENT) -f newlib\CMakeFiles\newlib.dir\build.make newlib/CMakeFiles/newlib.dir/lib.c.obj
+.PHONY : lib.c.obj
 
-src/source.i: src/source.c.i
-.PHONY : src/source.i
-
-# target to preprocess a source file
-src/source.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testbinary.dir\build.make CMakeFiles/testbinary.dir/src/source.c.i
-.PHONY : src/source.c.i
-
-src/source.s: src/source.c.s
-.PHONY : src/source.s
-
-# target to generate assembly for a file
-src/source.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testbinary.dir\build.make CMakeFiles/testbinary.dir/src/source.c.s
-.PHONY : src/source.c.s
-
-test.obj: test.c.obj
-.PHONY : test.obj
-
-# target to build an object file
-test.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testbinary.dir\build.make CMakeFiles/testbinary.dir/test.c.obj
-.PHONY : test.c.obj
-
-test.i: test.c.i
-.PHONY : test.i
+lib.i: lib.c.i
+.PHONY : lib.i
 
 # target to preprocess a source file
-test.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testbinary.dir\build.make CMakeFiles/testbinary.dir/test.c.i
-.PHONY : test.c.i
+lib.c.i:
+	cd /d C:\Users\ahmed\OneDrive\Desktop\testingCMake\build && $(MAKE) $(MAKESILENT) -f newlib\CMakeFiles\newlib.dir\build.make newlib/CMakeFiles/newlib.dir/lib.c.i
+.PHONY : lib.c.i
 
-test.s: test.c.s
-.PHONY : test.s
+lib.s: lib.c.s
+.PHONY : lib.s
 
 # target to generate assembly for a file
-test.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testbinary.dir\build.make CMakeFiles/testbinary.dir/test.c.s
-.PHONY : test.c.s
+lib.c.s:
+	cd /d C:\Users\ahmed\OneDrive\Desktop\testingCMake\build && $(MAKE) $(MAKESILENT) -f newlib\CMakeFiles\newlib.dir\build.make newlib/CMakeFiles/newlib.dir/lib.c.s
+.PHONY : lib.c.s
 
 # Help Target
 help:
@@ -198,13 +162,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... newlib
-	@echo ... testbinary
-	@echo ... src/source.obj
-	@echo ... src/source.i
-	@echo ... src/source.s
-	@echo ... test.obj
-	@echo ... test.i
-	@echo ... test.s
+	@echo ... lib.obj
+	@echo ... lib.i
+	@echo ... lib.s
 .PHONY : help
 
 
@@ -216,6 +176,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
+	cd /d C:\Users\ahmed\OneDrive\Desktop\testingCMake\build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

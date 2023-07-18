@@ -1,0 +1,2 @@
+C:\mingw32\bin\ar.exe qc libnewlib.a CMakeFiles/newlib.dir/lib.c.obj
+C:\mingw32\bin\ranlib.exe libnewlib.a

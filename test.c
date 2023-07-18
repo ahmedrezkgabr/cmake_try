@@ -1,10 +1,11 @@
 #include <stdio.h>
 #include "header.h"
+#include "lib.h"
 
 int main()
 {
 
 
-    printf("value from other source file is: %d\n", source());
+    lib_message();
     return 0;
 }

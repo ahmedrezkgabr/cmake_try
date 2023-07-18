@@ -109,6 +109,7 @@ testbinary_EXTERNAL_OBJECTS =
 testbinary.exe: CMakeFiles/testbinary.dir/test.c.obj
 testbinary.exe: CMakeFiles/testbinary.dir/src/source.c.obj
 testbinary.exe: CMakeFiles/testbinary.dir/build.make
+testbinary.exe: newlib/libnewlib.a
 testbinary.exe: CMakeFiles/testbinary.dir/linkLibs.rsp
 testbinary.exe: CMakeFiles/testbinary.dir/objects1.rsp
 testbinary.exe: CMakeFiles/testbinary.dir/link.txt

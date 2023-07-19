@@ -1,7 +1,8 @@
 set(SOURCE_CODE
     test.c 
     src/source.c)
-
+file(GLOB_RECURSE SRC "*.c")
+message(STATUS "SOURCE: ${SRC}")
 set(TARGET 
     testbinary)
 
@@ -72,3 +73,9 @@ configure_file(config.h.in config.h)
 # option(<variable_name> "<comment>" <its_value>) this command to set a variable in the cach file
 # set(<variable_name> <value> CACHE <data_type> "<comment>") it is equivelant to the last command
 ##################################################################################################
+
+####################################
+# install(FILES "<files_paths>" DESTINATION "<estination_dir_path>")
+# copy the file from dir to anouther
+# this install line runs by "cmake --install" command in the terminal
+##############

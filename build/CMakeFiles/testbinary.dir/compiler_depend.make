@@ -5,6 +5,7 @@ CMakeFiles/testbinary.dir/src/source.c.obj: C:/Users/ahmed/OneDrive/Desktop/test
   C:/Users/ahmed/OneDrive/Desktop/testingCMake/inc/header.h
 
 CMakeFiles/testbinary.dir/test.c.obj: C:/Users/ahmed/OneDrive/Desktop/testingCMake/test.c \
+  config.h \
   C:/Users/ahmed/OneDrive/Desktop/testingCMake/inc/header.h \
   C:/Users/ahmed/OneDrive/Desktop/testingCMake/newlib/lib.h \
   C:/mingw32/i686-w64-mingw32/include/_mingw.h \
@@ -34,15 +35,17 @@ C:/Users/ahmed/OneDrive/Desktop/testingCMake/inc/header.h:
 
 C:/Users/ahmed/OneDrive/Desktop/testingCMake/newlib/lib.h:
 
+config.h:
+
 C:/Users/ahmed/OneDrive/Desktop/testingCMake/test.c:
-
-C:/mingw32/i686-w64-mingw32/include/vadefs.h:
-
-C:/mingw32/i686-w64-mingw32/include/_mingw_print_pop.h:
 
 C:/mingw32/i686-w64-mingw32/include/_mingw_mac.h:
 
 C:/mingw32/i686-w64-mingw32/include/_mingw_off_t.h:
+
+C:/mingw32/i686-w64-mingw32/include/vadefs.h:
+
+C:/mingw32/i686-w64-mingw32/include/_mingw_print_pop.h:
 
 C:/mingw32/i686-w64-mingw32/include/_mingw_print_push.h:
 
